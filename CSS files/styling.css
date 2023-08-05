@@ -1,0 +1,239 @@
+:root{
+  --mainColor: #10CAB7;
+  --grayText: #F6F6F6;
+  --blackText: black;
+  --secondryColor: #d8d8d8;
+  --mainFont: 'Work Sans', sans-serif;
+}
+.body{
+  margin:0;
+}
+.landing img {
+  /* standard height of browser */
+  height: 850px;
+  
+  /* the standard width of browser */
+  width: 1519px;
+  object-fit:cover;
+  /* z-index: 1; */
+}
+
+.nav {
+  padding-top: 25px;
+  background-color: white;
+  /* width: 736; */
+  height: 40px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: 24px;
+  padding-left: 200px;
+}
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-self: center;
+  /* width: 1519px; */
+  height: 40px;
+  /* margin: auto; */
+  padding-bottom: 9px;
+}
+
+.burgerMenu{
+    padding-left: 1050px;
+}
+
+.hello{
+    position: absolute;
+    font-size: 50px;
+    color: var(--mainColor);
+    left: 625px;
+    top: 300px;
+    font-weight: bold;
+    margin:0;
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: var(--mainFont);
+   
+}
+
+.we-are-leon{
+    position: absolute;
+    left: 625px;
+    /* display: flex; */
+    top: 375px;
+    font-size: 19px;
+    line-height: 180%;
+    /* flex-wrap: wrap; */
+    margin: 0;
+    font-family: var(--mainFont);
+    width: 300px;
+    word-break: break-all;
+}
+.what-we-do{
+  
+  position: relative;
+  /* bottom: 200px; */
+  background-color: var(--grayText);
+  margin: 0;
+  height:370px;
+  overflow: hidden
+}
+.box{
+  position:absolute;
+  top: 20%;
+  left: 10%;
+  width: 1200px;
+  /* height:370px; */
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
+
+
+.tell-us, .we-will-do, .your-product{
+  /* position: absolute; */
+  
+  color: var(--blackText);
+  font-family: var(--mainFont);
+  font-weight:bolder ;  
+  font-size: 18px;
+  padding-top:5px;
+}
+
+/* .diamond, .earth, .magic{
+  width: 100px;
+} */
+
+
+
+
+
+.lorem-tell-us, .lorem-we-will, .lorem-your-product{
+  font-size: 18px;
+  font-family: var(--mainFont);
+  color: gray;
+  width: 350px;
+  line-height: 1.7;
+  padding-top:9px;  
+}
+
+
+
+.dont-be-busy{
+  position: absolute;
+  
+  font-size: 20px;
+
+  color: var(--mainColor);
+  color: gray ;
+  font-family: var(--mainFont);
+  margin: 0;
+  padding-top: 80px;
+
+}
+.services{
+  display:flex;
+  justify-content: center;
+  /* height: 600px;   */
+  width: 1519px;
+  
+  
+}
+
+.services-title{
+  /* position: relative; */
+  
+  font-size: 92px;
+
+  color: var(--mainColor);
+  font-weight: bold;
+  color: var(--secondryColor);
+  font-family: var(--mainFont);
+  margin: 0;
+
+}
+
+
+
+
+
+
+
+.graphic-designer {
+  position: absolute;
+  width: 350px;
+  height: 20px;
+  /* padding-top: 200px;  */
+  /* background-color: #10CAB7; */
+  right: 1000px;
+  margin: 0;
+    
+}
+
+
+
+
+.graphic-designer, .ux, .web-design  {
+  /* position: absolute; */
+  width: 350px;
+  height: 20px;
+  
+  /* background-color: #10CAB7; */
+  /* right: 1000px; */
+  margin: 0;
+    
+}
+
+.ux-text, .graphic-text, .web-text{
+  
+  font-size: 16px;
+  color: gray;
+  font-family: var(--mainFont);
+  padding-left: 55px;
+  
+  width: 370px;
+  line-height: 140%;
+  font-weight: 100;
+  padding-top: -15px;
+  
+
+}
+.ux-title, .graphic-title, .web-title{
+  /* position: absolute; */
+  display: inline-block;
+  top:100%;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: var(--mainFont);
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+.icon{
+  padding-top: 15px; 
+}
+
+.tracks{
+  height: 400px;  
+  width: 1519px;
+  display: flex;
+  justify-content: space-around ;
+  
+}
+
+
+
+
+
+
+
