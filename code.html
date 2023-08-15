@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leon</title>
+    <title>Software</title>
     <link rel="stylesheet" href="CSS files/styling.css" />
     <link rel="stylesheet" href="CSS files/normalize.css" />
+    <link rel="preconnect" href="CSS files/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google fonts files -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
@@ -14,49 +16,74 @@
     />
   </head>
   <body>
-    <div class="nav">
-      <div class="content">
-        <img class="logo" src="Imgs/logo.png" alt="" />
-        <svg
-          class="burgerMenu"
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:svgjs="http://svgjs.com/svgjs"
-          width="30"
-          height="30"
-          x="0"
-          y="0"
-          viewBox="0 0 40 40"
-          style="enable-background: new 0 0 512 512"
-          xml:space="preserve"
-        >
-          <g>
-            <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
-              <path
-                d="M3.75 10c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM3.75 30c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM10.417 20c0-.69.56-1.25 1.25-1.25H35a1.25 1.25 0 1 1 0 2.5H11.667c-.69 0-1.25-.56-1.25-1.25z"
-                fill="#000000"
-                data-original="#000000"
-              ></path>
+    <!-- start of navbar -->
+    <div class="navbar">
+      <!-- start of container -->
+      <div class="container">
+        <img src="Imgs/logo.png" alt="" />
+        <!-- start of menu -->
+        <div class="menu">
+          <svg
+            class="burgerMenu"
+            xmlns="http://www.w3.org/2000/svg"
+            version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xmlns:svgjs="http://svgjs.com/svgjs"
+            width="30"
+            height="30"
+            x="0"
+            y="0"
+            viewBox="0 0 40 40"
+            style="enable-background: new 0 0 512 512"
+            xml:space="preserve"
+          >
+            <g>
+              <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                  d="M3.75 10c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM3.75 30c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM10.417 20c0-.69.56-1.25 1.25-1.25H35a1.25 1.25 0 1 1 0 2.5H11.667c-.69 0-1.25-.56-1.25-1.25z"
+                  fill="#000000"
+                  data-original="#000000"
+                ></path>
+              </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+
+          <li class="dropdown">
+            <ul class="op1">
+              <a href="">Services</a>
+            </ul>
+            <ul class="op2">
+              <a href="">Portfolio</a>
+            </ul>
+            <ul class="op3">
+              <a href="">About</a>
+            </ul>
+            <ul>
+              <a href="">Contact</a>
+            </ul>
+          </li>
+
+          <!--End of menu -->
+        </div>
+        <!-- end of container -->
       </div>
-    </div>
-    <div class="landing">
-      <h1 class="hello">Hello There</h1>
-      <p class="we-are-leon">
-        We are Leon - Super Creative & Minimal Agency Web Template
-      </p>
-      <img src="Imgs/landingIMG.jpg" alt="" />
+      <!-- end of navbar -->
     </div>
 
+    <div class="landing">
+      <div class="intro-text">
+        <h1>Hello world</h1>
+        <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
+      </div>
+    </div>
     <!-- start of what-we-do class -->
+
     <div class="what-we-do">
-      <!-- end of container (box) class -->
       <div class="box">
         <!-- first feature -->
-        <div class="magic"><svg class="magic-icon"
+        <div class="feat">
+          <svg
+            class="magic-icon"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -78,13 +105,19 @@
                 opacity="1"
                 class=""
               ></path>
-            </g></svg>
+            </g>
+          </svg>
           <h3 class="tell-us">Tell Us Your Idea</h3>
-          <p class="lorem-tell-us">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+          <p class="lorem-tell-us">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut lab
+          </p>
         </div>
+
         <!-- second feature -->
-        <div class="diamond">
-          <svg class="diamond-icon"
+        <div class="feat">
+          <svg
+            class="diamond-icon"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -129,12 +162,17 @@
               ></path>
             </g>
           </svg>
-          <h3 class="we-will-do">We Will Do All The Work</h3> 
-          <p class="lorem-we-will">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+          <h3 class="we-will-do">We Will Do All The Work</h3>
+          <p class="lorem-we-will">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut lab
+          </p>
         </div>
+
         <!-- third feature -->
-        <div class="earth">
-          <svg class="earth-icon"
+        <div class="feat">
+          <svg
+            class="earth-icon"
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -163,53 +201,366 @@
               ></path>
             </g>
           </svg>
-          <h3 class="your-product">Your Product is Worldwide</h3> 
-          <p class="lorem-your-product">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lab</p>
+          <h3 class="your-product">Your Product is Worldwide</h3>
+          <p class="lorem-your-product">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut lab
+          </p>
         </div>
-        <!-- end of container (box) class -->
+
+        <!-- end of box class -->
       </div>
       <!-- end of what-we-do class -->
     </div>
-    
-    <div class="services">
-      <p class="services-title"> Services</p>
-      <p class="dont-be-busy"> Don't be busy be productive</p>
+
+    <div class="container">
+      <!-- start of services section -->
+      <div class="services">
+        <!-- start of services content -->
+        <div class="contain">
+          <p class="services-title">Services</p>
+          <p class="dont-be-busy">Don't be busy be productive</p>
+        </div>
+        <!-- end of services content -->
+      </div>
+      <!-- end of services section -->
+
+      <!-- start of tracks section -->
+      <div class="tracks">
+        <!-- column1 -->
+        <div class="tracks-content">
+          <div class="col1">
+            <div class="graphic">
+              <div class="text">
+                
+                <div class="icon">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    width="35"
+                    height="35"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
+                        fill="#10CAB7"
+                        data-original="#000000"
+                        opacity="1"
+                        class=""
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <p class="graphic-title">Graphic Design</p>
+                  
+                  <p class="graphic-text">
+                    Graphic design is the process of visual communication and
+                    problem-solving using one or more of typography, photography and
+                    illustration.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ux">
+              <div class="text">
+                <div class="icon">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    width="35"
+                    height="35"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
+                        fill="#10CAB7"
+                        data-original="#000000"
+                        opacity="1"
+                        class=""
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <p class="ux-title">UI & UX</p>
+                  
+                  <p class="ux-text">
+                    Process of enhancing user satisfaction with a product by
+                    improving the usability, accessibility, and pleasure provided in
+                    the interaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- column2 -->
+          <div class="col2">
+            <div class="web">
+              <div class="text">
+                <div class="icon">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    width="35"
+                    height="35"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
+                        fill="#10CAB7"
+                        data-original="#000000"
+                        opacity="1"
+                        class=""
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+               <div>
+
+                 <p class="web-title">Web Design</p>
+                 <p class="web-text">
+                   Web design encompasses many different skills and disciplines
+                   in the production and maintenance of websites.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="devp">
+              <div class="text">
+                
+                <div class="icon">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:svgjs="http://svgjs.com/svgjs"
+                    width="35"
+                    height="35"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
+                        fill="#10CAB7"
+                        data-original="#000000"
+                        opacity="1"
+                        class=""
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <p class="devp-title">Web Development</p>
+                  <p class="devp-text">
+                    Web development is a broad term for the work involved in
+                    developing a web site for the Internet or an intranet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- column3 -->
+          <div class="col3">
+            <div class="image ">
+              <img class="sora" src="Imgs/landingIMG.jpg" alt="" />
+            <div class="shape">
+              
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of tracks section -->
+    </div>
+    <!-- end of services, tracks container -->
+
+
+    <!-- start of container Portfolio -->
+    <div class="profile-section">
+     
+    <div class="container">
+     <!-- start of Portfolio section -->
+      <div class="Portfolio">
+         
+          <p class="Portfolio-title">Portfolio</p>
+          <p class="if-you-do-it-right">If you do it right, it will last forever.</p>
+        
+      </div>
+    <!-- end of Portfolio section -->
+
+
+
+    <div class="projects">
+      <div class="proj1">
+
+        <img class="proj1-img" src="Imgs/landingIMG.jpg" alt="">
+        <div class="proj1-text">
+          <p class="proj1-title">Project Here</p>
+          <p class="proj1-desc">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+
+        </div>
+
+      </div>
+
+      <div class="proj2">
+        <img class="proj1-img" src="Imgs/landingIMG.jpg" alt="">
+        <div class="proj2-text">
+          <p class="proj2-title">Project Here</p>
+          <p class="proj2-desc">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+
+        </div>
+
+      </div>
+
+      <div class="proj3">
+        <img class="proj1-img" src="Imgs/landingIMG.jpg" alt="">
+        <div class="proj3-text">
+          <p class="proj3-title">Project Here</p>
+          <p class="proj3-desc">My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+
+        </div>
+      </div>
       
     </div>
 
 
-      <div class="tracks">
 
-        <div class="tracks1">
-          
-          <div class="graphic-designer">
-            <svg  class="icon" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="35" height="35" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z" fill="#10CAB7" data-original="#000000" opacity="1" class=""></path></g></svg>
-            <p class="graphic-title">Graphic Design</p>
-            <p class="graphic-text">Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p>
-            
-          </div>
+
+
+
+
+    </div>
+   <!-- end of container Portfolio  -->
+ 
+  </div>
+  <!-- end of profile section -->
+
+
+
+
+
+<!-- start of about section -->
+<div class="about-section">
+  <!-- start of container about -->
+  <div class="container">
+
+    <div class ="about">
+      <p class="about-title">About</p>
+      <p class="less-is-more">Less is more</p>
+    </div>
+
+
+    <!-- start about sha2lbzat -->
+    <div class="about-section">
+      <div class="image-about">
+        <img src="Imgs/landingIMG.jpg" alt="">
+        <div class="gray-shape-about">
+
         </div>
-        
-        <div class="ux">
-          <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="35" height="35" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z" fill="#10CAB7" data-original="#000000" opacity="1" class=""></path></g></svg>
-          <p class="ux-title">Graphic Design</p>
-          <p class="ux-text">Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p>
-          
+        <div class="main-color-shape-about">
+
         </div>
-        
-        <div class="tracks2">
-          <div class="web-design">
-            <svg  xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="35" height="35" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z" fill="#10CAB7" data-original="#000000" opacity="1" class=""></path></g></svg>
-            <p class="web-title">Graphic Design</p>
-            <p class="web-text">Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p>
-            
-          </div>
+        <div class="main-color-shape-about-2">
+
         </div>
+      
       </div>
-      
-      
-      
-      
-    </body>
-    </html>
+
+      <div class="about-text">
+        <p class="lorem-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas labore ea excepturi, laboriosam sunt deserunt libero deleniti, aspernatur tempora id cupiditate quia quibusdam iste quasi illo. Officiis explicabo adipisci enim!</p>
+        <div class="line">
+
+        </div>
+        <p class="lorem-down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae velit suscipit quisquam consequatur delectus cum, accusamus itaque eos! In reprehenderit placeat praesentium eveniet optio a laborum id eum sequi eaque!</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- end of container about -->
+</div>
+<!-- end of about section -->
+
+
+
+
+<!-- start of contact section -->
+<div class="contact">
+<!-- start of container section -->
+  <div class="container">
+    <div class ="contact">
+      <p class="contact-title">Contact</p>
+      <p class="born-to-create">We are born to create</p>
+    </div>
+
+    <div class="feel-free">
+      <p> Feel free to drop us a line at:</p>
+    </div>
+
+    <div class="mail">
+      <p><a class="link" href="abdelrhmaan.17@gmail.com">abdelrhmaan.17@gmail.com</a></p>
+    </div>
+
+
+  </div>
+  <!-- end of container section -->
     
+
+
+</div>
+<!-- end of contact section -->
+<div class="footer">
+  <p>© 2021 <span>Leon</span> All Right Reserved</p>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
