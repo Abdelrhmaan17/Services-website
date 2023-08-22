@@ -49,9 +49,6 @@
         width: 1170px;
     }   
     
-
-
-
 }
 
 
@@ -314,7 +311,7 @@ text-align: center;
 }
 
 .proj1-img, .proj2-img, .proj3-img{
-  width: 385px;
+  max-width: 100%;
 }
 
 .proj1,.proj2, .proj3{
@@ -354,6 +351,7 @@ text-align: center;
   width: 250px;
   height: 375px;
   padding-left: 50px;
+  max-width: 100%;
 }
 
 .gray-shape-about{
@@ -450,6 +448,7 @@ text-align: center;
   font-weight: 800;
   font-family: var(--mainFont);
   color: var(--mainColor);
+  text-decoration: none;
 }
 
 .footer{
