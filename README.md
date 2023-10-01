@@ -10,7 +10,7 @@
 
 
 ## UX design 
-[Original Desgin]([https://elzerowebschool.github.io/HTML_And_CSS_Template_One/])
+[Original Desgin](https://elzerowebschool.github.io/HTML_And_CSS_Template_One/)
 
 ## My code
-[Application run]([https://abdelrhmaan17.github.io/Services-website/])
+[Application run](https://abdelrhmaan17.github.io/Services-website/)
