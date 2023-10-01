@@ -117,12 +117,14 @@
   }
 
   .landing{
-    background-image: url(../Imgs/landingIMG.jpg);
+    background-image: url(../Imgs/landing.jpg);
     background-size: cover;
     height: calc(100vh - 74px);
     position: relative;
     z-index: -1;
   }
+
+
   .intro-text h1{
     margin:0;
     padding: 0;
@@ -468,5 +470,20 @@ text-align: center;
   color:var(--mainColor)
 }
 
+.go-up{
+  width:55px;
+  height: 55px;
+  border-radius: 80px;
+  background-color: #10CAB7;
+  text-align: center;
+  color:white;
+  box-shadow: 3.5px 3.5px 1.5px rgba(0, 0, 0, 0.2);;
+  position: fixed;
+  right:5%;
+  font-size: 20px;
+  font-weight: bold;
+  bottom: 10%;
+  display: none;
+}
 
 
