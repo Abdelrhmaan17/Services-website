@@ -1,537 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software</title>
-    <link rel="stylesheet" href="CSS files/styling.css" />
-    <link rel="stylesheet" href="CSS files/normalize.css" />
-    <link rel="preconnect" href="CSS files/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- google fonts files -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- font-awesome -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- extra fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Work+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="media-query.css" />
+    <link rel="icon" href="imgs/home-tab.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Best place to find a home that suits you!"
+    />
+    <title>Your home</title>
   </head>
   <body>
-    <!-- start of navbar -->
-    <header class="navbar">
-      <!-- start of container -->
-      <nav class="container">
-        <img src="Imgs/logo.png" alt="" />
-        <!-- start of menu -->
-        <div class="menu">
-          <svg
-            class="burgerMenu"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.com/svgjs"
-            width="30"
-            height="30"
-            x="0"
-            y="0"
-            viewBox="0 0 40 40"
-            style="enable-background: new 0 0 512 512"
-            xml:space="preserve"
-          >
-            <g>
-              <g fill="#000" fill-rule="evenodd" clip-rule="evenodd">
+    <!-- start of main content -->
+    <main class="main-container-home">
+      <!-- start of header section -->
+      <header>
+        <!-- burger menu sidebar for responsive screens -->
+
+        <aside class="sidebar">
+          <div class="sidebar-container">
+            <div>
+              <img class="logo" src="logo.png" alt="" />
+              <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <ul class="links">
+              <li class="home-sidebar">
+                <a a href="" class="home">Home</a>
+              </li>
+              <li class="discover-sidebar">
+                <a href="" class="discover">Discover</a>
+              </li>
+              <li class="activties-sidebar">
+                <a href="" class="activties">Activties</a>
+              </li>
+              <li class="about-sidebar">
+                <a href="" class="about">About</a>
+              </li>
+              <li class="contact-sidebar">
+                <a href="" class="contact">Contact</a>
+              </li>
+              <li class="register-sidebar">
+                <a href="" class="register">Register</a>
+              </li>
+              <li class="sign-in-sidebar">
+                <a href="" class="sign-in">Sign-in</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- burger menu sidebar for responsive screens -->
+        <nav class="header-nav">
+          <button class="sidebar-burger-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <!-- logo and title -->
+          <div class="nav-logo">
+            <a href="index.html">
+              <svg
+                class="website-logo"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
                 <path
-                  d="M3.75 10c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM3.75 30c0-.69.56-1.25 1.25-1.25h30a1.25 1.25 0 1 1 0 2.5H5c-.69 0-1.25-.56-1.25-1.25zM10.417 20c0-.69.56-1.25 1.25-1.25H35a1.25 1.25 0 1 1 0 2.5H11.667c-.69 0-1.25-.56-1.25-1.25z"
-                  fill="#000000"
-                  data-original="#000000"
-                ></path>
-              </g>
-            </g>
-          </svg>
+                  d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+                  fill="#2F80ED"
+                /></svg>
+              </a>
+              <a href="index.html"><p class="inline">Your home</p></a>
+          </div>
 
-          <li class="dropdown">
-            <ul class="op1">
-              <a href="">Services</a>
+          <!-- navbar links -->
+          <div class="nav-links">
+            <ul class="nav-bar-link-list">
+              <li><a href="index.html">Home</a></li>
+              <li class="nav-link"><a href="">Discover</a></li>
+              <li class="nav-link"><a href="">Activties</a></li>
+              <li class="nav-link"><a href="">About</a></li>
+              <li class="nav-link"><a href="">Contact</a></li>
             </ul>
-            <ul class="op2">
-              <a href="">Portfolio</a>
-            </ul>
-            <ul class="op3">
-              <a href="">About</a>
-            </ul>
-            <ul>
-              <a href="">Contact</a>
-            </ul>
-          </li>
-
-          <!--End of menu -->
-        </div>
-        <!-- end of container -->
-      </nav>
-      <!-- end of navbar -->
-    </header>
-
-    <div class="landing">
-      <div class="intro-text">
-        <h1>Hello world</h1>
-        <p>We are Leon - Super Creative & Minimal Agency Web Template</p>
-      </div>
-    </div>
-
-    <!-- start of what-we-do class -->
-
-    <div class="what-we-do">
-      <div class="box">
-        <!-- first feature -->
-        <div class="feat">
-          <svg
-            class="magic-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.com/svgjs"
-            width="55"
-            height="55"
-            x="0"
-            y="0"
-            viewBox="0 0 512 512"
-            style="enable-background: new 0 0 512 512"
-            xml:space="preserve"
-            class=""
-          >
-            <g>
-              <path
-                d="m129 103.2 44.4 24.3c5.7 3.1 7.8 10.2 4.7 15.9-1.1 2-2.7 3.6-4.7 4.7L129 172.3c-2 1.1-3.6 2.7-4.7 4.7L100 221.4c-3.1 5.7-10.2 7.8-15.9 4.7-2-1.1-3.6-2.7-4.7-4.7L55.2 177c-1.1-2-2.7-3.6-4.7-4.7L6.1 148.1c-5.7-3.1-7.8-10.2-4.7-15.9 1.1-2 2.7-3.6 4.7-4.7l44.4-24.3c2-1.1 3.6-2.7 4.7-4.7l24.3-44.3c3.1-5.7 10.3-7.8 16-4.6 1.9 1.1 3.5 2.7 4.6 4.6l24.3 44.3c1 2 2.6 3.6 4.6 4.7zM459.5 340.2l44.4 24.3c5.7 3.1 7.8 10.2 4.7 15.9-1.1 2-2.7 3.6-4.7 4.7l-44.4 24.3c-2 1.1-3.6 2.7-4.7 4.7l-24.3 44.4c-3.1 5.7-10.3 7.8-16 4.7-2-1.1-3.6-2.7-4.7-4.7L385.7 414c-1.1-2-2.7-3.6-4.7-4.7L336.6 385c-5.7-3.1-7.8-10.3-4.7-16 1.1-2 2.7-3.6 4.7-4.7L381 340c2-1.1 3.6-2.7 4.7-4.7L410 291c3.1-5.7 10.3-7.8 16-4.7 2 1.1 3.6 2.7 4.7 4.7l24.3 44.4c.9 2.1 2.5 3.7 4.5 4.8zM267.3 52.4l29.1 15.9c3.7 2.1 5.1 6.8 3.1 10.5-.7 1.3-1.8 2.3-3.1 3.1l-29.1 15.9c-1.3.7-2.4 1.8-3.1 3.1L248.3 130c-2.1 3.7-6.8 5.1-10.5 3.1-1.3-.7-2.3-1.8-3.1-3.1l-15.9-29.1c-.7-1.3-1.8-2.4-3.1-3.1l-29.1-15.9c-3.7-2-5.1-6.7-3.1-10.5.7-1.3 1.8-2.4 3.1-3.1l29.1-15.9c1.3-.7 2.4-1.8 3.1-3.1l15.9-29.1c2.1-3.7 6.8-5.1 10.5-3.1 1.3.7 2.3 1.8 3.1 3.1l15.9 29.1c.7 1.3 1.8 2.4 3.1 3.1zM500.6 65.7l-41.1-41.1c-15.2-15.2-39.9-15.3-55.2-.1l-.1.1L37.8 391.1c-15.2 15.2-15.3 39.9 0 55.2l41.1 41.1c15.2 15.2 39.9 15.3 55.2 0l366.5-366.5c15.2-15.2 15.2-39.9 0-55.2zM357.7 204.3l-36.8-36.8L429.4 58.9l36.8 36.8z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-                class=""
-              ></path>
-            </g>
-          </svg>
-          <h3 class="tell-us">Tell Us Your Idea</h3>
-          <p class="lorem-tell-us">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut lab
-          </p>
-        </div>
-
-        <!-- second feature -->
-        <div class="feat">
-          <svg
-            class="diamond-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.com/svgjs"
-            width="55"
-            height="55"
-            x="0"
-            y="0"
-            viewBox="0 0 512.004 512.004"
-            style="enable-background: new 0 0 512 512"
-            xml:space="preserve"
-            class=""
-          >
-            <g>
-              <path
-                d="M509.476 187.484 425.816 53.07a16.737 16.737 0 0 0-14.206-7.892H100.395a16.739 16.739 0 0 0-14.206 7.892L2.529 187.484a16.729 16.729 0 0 0 2.03 20.324l239.268 253.763a16.727 16.727 0 0 0 24.35-.005l239.268-253.758a16.737 16.737 0 0 0 2.031-20.324zm-253.473 238.22L37.75 194.227l71.942-115.585h292.626l71.937 115.585-218.252 231.477z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-                class=""
-              ></path>
-              <path
-                d="M16.735 179.592h478.536v33.464H16.735z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-                class=""
-              ></path>
-              <path
-                d="m171.874 194.724 25.801-129.545-32.823-6.537-26.771 134.414a16.75 16.75 0 0 0 .876 9.482l101.508 253.769 31.071-12.426-99.662-249.157z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-                class=""
-              ></path>
-              <path
-                d="m374.99 191.712-27.887-130.51-32.722 6.994 26.821 125.507-100.715 250.144 31.038 12.493 102.629-254.879a16.808 16.808 0 0 0 .836-9.749z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-                class=""
-              ></path>
-            </g>
-          </svg>
-          <h3 class="we-will-do">We Will Do All The Work</h3>
-          <p class="lorem-we-will">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut lab
-          </p>
-        </div>
-
-        <!-- third feature -->
-        <div class="feat">
-          <svg
-            class="earth-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.com/svgjs"
-            width="55"
-            height="55"
-            x="0"
-            y="0"
-            viewBox="0 0 31.416 31.416"
-            style="enable-background: new 0 0 512 512"
-            xml:space="preserve"
-            class=""
-          >
-            <g>
-              <path
-                d="m28.755 6.968-.47.149-2.503.223-.707 1.129-.513-.163L22.57 6.51l-.289-.934-.387-.996-1.252-1.123-1.477-.289-.034.676 1.447 1.412.708.834-.796.416-.648-.191-.971-.405.033-.783-1.274-.524-.423 1.841-1.284.291.127 1.027 1.673.322.289-1.641 1.381.204.642.376h1.03l.705 1.412 1.869 1.896-.137.737-1.507-.192-2.604 1.315-1.875 2.249-.244.996h-.673l-1.254-.578-1.218.578.303 1.285.53-.611.932-.029-.065 1.154.772.226.771.866 1.259-.354 1.438.227 1.67.449.834.098 1.414 1.605 2.729 1.605-1.765 3.372-1.863.866-.707 1.927-2.696 1.8-.287 1.038c6.892-1.66 12.019-7.851 12.019-15.253a15.639 15.639 0 0 0-2.66-8.739z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-              ></path>
-              <path
-                d="m17.515 23.917-1.144-2.121 1.05-2.188-1.05-.314-1.179-1.184-2.612-.586-.867-1.814v1.077h-.382L9.08 13.735v-2.507L7.43 8.545l-2.62.467H3.045l-.888-.582 1.133-.898-1.13.261a15.61 15.61 0 0 0-2.156 7.916c0 8.673 7.031 15.707 15.705 15.707.668 0 1.323-.059 1.971-.137l-.164-1.903s.721-2.826.721-2.922c-.001-.097-.722-2.537-.722-2.537zM5.84 5.065l2.79-.389 1.286-.705 1.447.417 2.312-.128.792-1.245 1.155.19 2.805-.263.773-.852 1.09-.728 1.542.232.562-.085A15.65 15.65 0 0 0 15.708 0 15.662 15.662 0 0 0 3.596 5.711h.008l2.236-.646zm10.532-3.503 1.604-.883 1.03.595-1.491 1.135-1.424.143-.641-.416.922-.574zm-4.751.129.708.295.927-.295.505.875-2.14.562-1.029-.602c-.001 0 1.006-.648 1.029-.835z"
-                fill="#10CAB7"
-                data-original="#000000"
-                opacity="1"
-              ></path>
-            </g>
-          </svg>
-          <h3 class="your-product">Your Product is Worldwide</h3>
-          <p class="lorem-your-product">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut lab
-          </p>
-        </div>
-
-        <!-- end of box class -->
-      </div>
-      <!-- end of what-we-do class -->
-    </div>
-
-    <div class="container">
-      <!-- start of services section -->
-      <div class="services">
-        <!-- start of services content -->
-        <div class="contain">
-          <h2 class="services-title">Services</h2>
-          <p class="dont-be-busy">Don't be busy be productive</p>
-        </div>
-        <!-- end of services content -->
-      </div>
-      <!-- end of services section -->
-
-      <!-- start of tracks section -->
-      <div class="tracks">
-        <!-- column1 -->
-        <div class="tracks-content">
-          <div class="col1">
-            <div class="graphic">
-              <div class="text">
-                <div class="icon">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.com/svgjs"
-                    width="35"
-                    height="35"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class=""
-                  >
-                    <g>
-                      <path
-                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
-                        fill="#10CAB7"
-                        data-original="#000000"
-                        opacity="1"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <p class="graphic-title">Graphic Design</p>
-
-                  <p class="graphic-text">
-                    Graphic design is the process of visual communication and
-                    problem-solving using one or more of typography, photography
-                    and illustration.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="ux">
-              <div class="text">
-                <div class="icon">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.com/svgjs"
-                    width="35"
-                    height="35"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class=""
-                  >
-                    <g>
-                      <path
-                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
-                        fill="#10CAB7"
-                        data-original="#000000"
-                        opacity="1"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <p class="ux-title">UI & UX</p>
-
-                  <p class="ux-text">
-                    Process of enhancing user satisfaction with a product by
-                    improving the usability, accessibility, and pleasure
-                    provided in the interaction.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <!-- column2 -->
-          <div class="col2">
-            <div class="web">
-              <div class="text">
-                <div class="icon">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.com/svgjs"
-                    width="35"
-                    height="35"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class=""
-                  >
-                    <g>
-                      <path
-                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
-                        fill="#10CAB7"
-                        data-original="#000000"
-                        opacity="1"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <p class="web-title">Web Design</p>
-                  <p class="web-text">
-                    Web design encompasses many different skills and disciplines
-                    in the production and maintenance of websites.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="devp">
-              <div class="text">
-                <div class="icon">
-                  <svg
-                    class="icon"
-                    xmlns="http://www.w3.org/2000/svg"
-                    version="1.1"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns:svgjs="http://svgjs.com/svgjs"
-                    width="35"
-                    height="35"
-                    x="0"
-                    y="0"
-                    viewBox="0 0 512 512"
-                    style="enable-background: new 0 0 512 512"
-                    xml:space="preserve"
-                    class=""
-                  >
-                    <g>
-                      <path
-                        d="M511.858 222.909C508.373 113.427 409.536 0 255.185 0 182.251 0 115.6 29.052 67.509 81.464 18.833 134.521-5.414 205.316 1.089 280.8 12.207 409.882 122.089 512 249.97 512h.498c41.104-.095 59.136-40.34 36.064-69.595-17.681-22.427-12.744-39.086-7.485-48.93 8.921-16.685 22.881-24.478 43.96-24.521 18.724 0 37.998.278 56.455-.908 81.24-5.171 135.033-62.139 132.396-145.137zM60.859 196.894c0-24.814 20.186-45 45-45s45 20.186 45 45-20.186 45-45 45-45-20.186-45-45zm60 165c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm75-210c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm120 0c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45zm90 90c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.186 45-45 45z"
-                        fill="#10CAB7"
-                        data-original="#000000"
-                        opacity="1"
-                        class=""
-                      ></path>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <p class="devp-title">Web Development</p>
-                  <p class="devp-text">
-                    Web development is a broad term for the work involved in
-                    developing a web site for the Internet or an intranet.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- column3 -->
-          <div class="col3">
-            <div class="image">
-              <img class="sora" src="Imgs/landing2.jpg" alt="" />
-              <div class="shape"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of tracks section -->
-    </div>
-    <!-- end of services, tracks container -->
-
-    <!-- start of container Portfolio -->
-    <div class="profile-section">
-      <div class="container">
-        <!-- start of Portfolio section -->
-        <div class="Portfolio">
-          <p class="Portfolio-title">Portfolio</p>
-          <p class="if-you-do-it-right">
-            If you do it right, it will last forever.
-          </p>
-        </div>
-        <!-- end of Portfolio section -->
-
-        <div class="projects">
-          <div class="proj1">
-            <img class="proj1-img" src="Imgs/landing.jpg" alt="" />
-            <div class="proj1-text">
-              <p class="proj1-title">Project Here</p>
-              <p class="proj1-desc">
-                My creative ability is very difficult to measure because it can
-                manifest in so many surprising and.
-              </p>
-            </div>
-          </div>
-
-          <div class="proj2">
-            <img class="proj1-img" src="Imgs/landing.jpg" alt="" />
-            <div class="proj2-text">
-              <p class="proj2-title">Project Here</p>
-              <p class="proj2-desc">
-                My creative ability is very difficult to measure because it can
-                manifest in so many surprising and.
-              </p>
-            </div>
-          </div>
-
-          <div class="proj3">
-            <img class="proj1-img" src="Imgs/landing.jpg" alt="" />
-            <div class="proj3-text">
-              <p class="proj3-title">Project Here</p>
-              <p class="proj3-desc">
-                My creative ability is very difficult to measure because it can
-                manifest in so many surprising and.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end of container Portfolio  -->
-    </div>
-    <!-- end of profile section -->
-
-    <!-- start of about section -->
-    <div class="about-section">
-      <!-- start of container about -->
-      <div class="container">
-        <div class="about">
-          <p class="about-title">About</p>
-          <p class="less-is-more">Less is more</p>
-        </div>
-
-        <!-- start about sha2lbzat -->
-        <div class="about-section">
-          <div class="image-about">
-            <img src="Imgs/landing.jpg" alt="" />
-            <div class="gray-shape-about"></div>
-            <div class="main-color-shape-about"></div>
-            <div class="main-color-shape-about-2"></div>
-          </div>
-
-          <div class="about-text">
-            <p class="lorem-up">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-              labore ea excepturi, laboriosam sunt deserunt libero deleniti,
-              aspernatur tempora id cupiditate quia quibusdam iste quasi illo.
-              Officiis explicabo adipisci enim!
-            </p>
-            <div class="line"></div>
-            <p class="lorem-down">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae
-              velit suscipit quisquam consequatur delectus cum, accusamus itaque
-              eos! In reprehenderit placeat praesentium eveniet optio a laborum
-              id eum sequi eaque!
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- end of container about -->
-    </div>
-    <!-- end of about section -->
-
-    <!-- start of contact section -->
-    <div class="contact">
-      <!-- start of container section -->
-      <div class="container">
-        <div class="contact">
-          <p class="contact-title">Contact</p>
-          <p class="born-to-create">We are born to create</p>
-        </div>
-
-        <div class="feel-free">
-          <p>Feel free to drop us a line at:</p>
-        </div>
-
-        <div class="mail">
-          <p>
-            <a class="link" href="abdelrhmaan.17@gmail.com"
-              >abdelrhmaan.17@gmail.com</a
+          <!-- navbar new account buttons -->
+          <div class="nav-btns">
+            <a href="sign-up.html"
+              ><button class="register-btn">Register</button></a
             >
-          </p>
-        </div>
+            <a href="sign-in.html"
+              ><button class="sign-in-btn">Sign in</button></a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <section class="banner-section">
+        <div class="overlay"></div>
+        <h1>Enjoy Your Dream Vacation</h1>
+        <p class="banner-qoute">
+          Plan and book our perfect trip with expert advice, travel tips,
+          destination information and inspiration from us
+        </p>
+      </section>
+      <div class="search-nav-container2">
+        <nav class="search-place-nav-responsive">
+          <form class="search-place-form-responsive">
+            <input
+              class="location-input-search"
+              type="text"
+              placeholder="Where to?"
+            />
+            <br/>
+            <input
+              class="check-in-input-search"
+              type="date"
+              placeholder="Check-in date"
+            />
+            <br/>
+            <input
+              class="check-out-input-search"
+              type="date"
+              placeholder="Check-out date"
+            />
+            <br/>
+            <input
+              class="guests-input-search"
+              type="text"
+              placeholder="Guests"
+            />
+          </form>
+          <button class="search-nav-btn1">Search</button>
+        </nav>
       </div>
-      <!-- end of container section -->
+
+      <div class="search-nav-container">
+        <nav class="search-place-nav">
+          <form class="search-place-form">
+            <label>
+              <input
+                class="location-input-search"
+                type="text"
+                placeholder="Where to?"
+              />
+            </label>
+            <br />
+            <label>
+              <input
+                class="check-in-input-search"
+                type="text"
+                placeholder="Check-in date"
+              />
+            </label>
+            <br />
+            <label>
+              <input
+                class="check-out-input-search"
+                type="text"
+                placeholder="Check-out date"
+              />
+            </label>
+            <br />
+            <input
+              class="guests-input-search"
+              type="text"
+              placeholder="Guests"
+            />
+          </form>
+          <button class="search-nav-btn2">Search</button>
+        </nav>
+      </div>
+
+      <div class="covid-restrictions-warning">
+        <svg
+          class="warning-covid-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+        >
+          <path
+            d="M16 12V18.6667"
+            stroke="#292D32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.0001 28.5468H7.92007C3.29341 28.5468 1.36007 25.2401 3.60007 21.2001L7.76007 13.7068L11.6801 6.66679C14.0534 2.38679 17.9467 2.38679 20.3201 6.66679L24.2401 13.7201L28.4001 21.2135C30.6401 25.2535 28.6934 28.5601 24.0801 28.5601H16.0001V28.5468Z"
+            stroke="#292D32"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.9932 22.6667H16.0052"
+            stroke="#292D32"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <p class="covid-text">
+          Check the latest COVID-19 restrictions before you travel.
+          <span class="span-covid-text">Learn more </span>
+        </p>
+      </div>
+
+      <!-- start of banner section -->
+
+      <div class="section1-enjoy-vacation">
+        <h1>Enjoy your dream vacation</h1>
+        <p>
+          Plan and book our perfect trip with expert advice, travel tips,
+          destination information and inspiration from us
+        </p>
+      </div>
+
+      <!-- end of banner section -->
+
+      <!-- start of articles section -->
+      <section class="choose-country-section">
+        <!-- start of article 1 -->
+        <article class="choose-country-section-article">
+          <img
+            class="choose-country-section-article-img"
+            src="imgs/article1-section1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Australia</h2>
+          <p>2246 properties</p>
+        </article>
+        <!-- end of article 1 -->
+        <!-- ------------------- -->
+        <!-- start of article 2 -->
+        <article class="choose-country-section-article">
+          <img
+            class="choose-country-section-article-img"
+            src="imgs/article2-section1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Japan</h2>
+          <p>1278 properties</p>
+        </article>
+        <!-- end of article 2 -->
+        <!-- ------------------- -->
+        <!-- start of article 3 -->
+        <article class="choose-country-section-article">
+          <img
+            class="choose-country-section-article-img"
+            src="imgs/article3-section1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>New Zealand</h2>
+          <p>480 properties</p>
+        </article>
+        <!-- end of article 3 -->
+        <!-- ------------------- -->
+        <!-- start of article 4 -->
+        <article class="choose-country-section-article">
+          <img
+            class="choose-country-section-article-img"
+            src="imgs/article4-section1.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Greece</h2>
+          <p>320 properties</p>
+        </article>
+        <!-- end of article 4 -->
+      </section>
+      <!-- end of articles section -->
+
+      <!-- start of inspiration section -->
+      <h1 class="inspiration-heading">Get inspiration for your next trip</h1>
+      <section class="inspiration-section">
+        <article class="inspiration-article1">
+          <div class="overlay"></div>
+          <div class="h2-inspiration">
+            <h2>Sydeny’s 10 most fashionable 5 star hotels</h2>
+          </div>
+          <p>
+            Browse the fastest growing tourism sector in the heart of Australia
+            tourism capital ....
+          </p>
+        </article>
+        <article class="inspiration-article2">
+          <div class="overlay"></div>
+          <div class="h2-inspiration">
+            <h2>Top cities for Vegan Travellers</h2>
+          </div>
+          <p>
+            Top sites where you do not have to worry about being a vegan. Our
+            tourist guide is here...
+          </p>
+        </article>
+        <article class="inspiration-article3">
+          <div class="overlay"></div>
+          <div class="h2-inspiration">
+            <h2>World’s top destinations during and post covid timeline</h2>
+          </div>
+          <p>
+            Pandemic is still intact and will be here for a longer time. Here’s
+            where your next destination...
+          </p>
+        </article>
+      </section>
+      <!-- end of inspiration section -->
+
+      <!-- start of popular section -->
+      <h1 class="popular-hotels-section-heading">Popular hotels</h1>
+      <section class="popular-hotels-section">
+        <!-- start of article 1 -->
+        <article class="popular-section-article1">
+          <img
+            class="popular-section-article-img"
+            src="imgs/article1-section3.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Lakeside Motel Warefront</h2>
+          <p>2246 properties</p>
+        </article>
+        <!-- end of article 1 -->
+        <!-- ------------------- -->
+        <!-- start of article 2 -->
+        <article class="popular-section-article2">
+          <img
+            class="popular-section-article-img"
+            src="imgs/article2-section3.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Recce Graham resort</h2>
+          <p>1278 properties</p>
+        </article>
+        <!-- end of article 2 -->
+        <!-- ------------------- -->
+        <!-- start of article 3 -->
+        <article class="popular-section-article3">
+          <img
+            class="popular-section-article-img"
+            src="imgs/article3-section3.jpg"
+            alt=""
+          />
+          <h2>Fireside Dinners</h2>
+          <p>480 properties</p>
+        </article>
+        <!-- end of article 3 -->
+        <!-- ------------------- -->
+        <!-- start of article 4 -->
+        <article class="popular-section-article4">
+          <img
+            class="popular-section-article-img"
+            src="imgs/article4-section3.jpg"
+            alt=""
+            loading="lazy"
+          />
+          <h2>Oculous Inn Stay</h2>
+          <p>320 properties</p>
+        </article>
+        <!-- end of article 4 -->
+      </section>
+      <!-- end of popular section -->
+
+      <!-- start of banner down section -->
+      <section class="down-banner">
+        <div class="overlay"></div>
+        <h1>
+          Download the mobile application for bonus coupons and travel codes
+        </h1>
+        <button class="download-mobile-app">Download mobile app</button>
+        <!-- <img src="imgs/mobile-down-banner.png" alt="" /> -->
+      </section>
+      <!-- end of banner down section -->
+
+      <div class="explore-dream-place">
+        <h1>Explore the world with My Dream place</h1>
+        <p>Discover new places and experiences</p>
+      </div>
+
+      <footer class="footer">
+        <!-- start of footer lists -->
+
+        <div class="nav-logo">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M3.414 13.7779C2.5 13.9999 2 15.1919 2 15.1919C2 15.1919 5.398 15.6259 6.949 17.3129C8.5 18.9999 9.071 22.2629 9.071 22.2629C9.071 22.2629 10.47 22.6979 10.485 20.8489C10.5 18.9999 9.778 17.3129 9.778 17.3129L13.091 13.9999L16.701 21.7039C16.701 21.7039 18.08 22.2299 18.04 20.3649C18 18.4999 16.85 10.2419 16.85 10.2419L19.678 7.41294C19.869 7.22845 20.0214 7.00776 20.1262 6.76375C20.231 6.51974 20.2862 6.2573 20.2885 5.99174C20.2908 5.72619 20.2402 5.46283 20.1396 5.21703C20.0391 4.97124 19.8906 4.74794 19.7028 4.56015C19.515 4.37237 19.2917 4.22386 19.0459 4.1233C18.8001 4.02274 18.5368 3.97213 18.2712 3.97444C18.0056 3.97675 17.7432 4.03192 17.4992 4.13674C17.2552 4.24156 17.0345 4.39392 16.85 4.58494L13.947 7.48794C13.947 7.48794 6.148 6.09394 3.824 6.29694C1.5 6.49994 2.559 7.56294 2.559 7.56294L10.203 11.2329L6.95 14.4859C6.95 14.4859 4.328 13.5559 3.414 13.7779Z"
+              fill="#2F80ED"
+            />
+          </svg>
+          <h4 class="logo-title">Your home</h4>
+        </div>
+
+        <!-- start of list1 -->
+        <ul>
+          <h4>Company</h4>
+          <li><p>About</p></li>
+          <li><p>Jobs</p></li>
+          <li><p>Newsroom</p></li>
+          <li><p>Advertising</p></li>
+          <li><p>Contact us</p></li>
+        </ul>
+        <!-- end of list1 -->
+
+        <!-- start of list2 -->
+        <ul>
+          <h4>Explore</h4>
+          <li><p>Australia</p></li>
+          <li><p>New Zealand</p></li>
+          <li><p>United States America (USA)</p></li>
+          <li><p>Greece</p></li>
+          <li><a>See more</a></li>
+        </ul>
+        <!-- end of list2 -->
+
+        <!-- start of list3 -->
+        <ul>
+          <h4>Terms and Policies</h4>
+          <li><p>Privacy Policy</p></li>
+          <li><p>Terms of use</p></li>
+          <li><p>Acessibility</p></li>
+          <li><p>Reward system policy</p></li>
+        </ul>
+        <!-- end of list3 -->
+
+        <!-- start of list4 -->
+        <ul>
+          <h4>Help</h4>
+          <li><p>Support</p></li>
+          <li><p>Jobs</p></li>
+          <li><p>Cancel your bookings</p></li>
+          <li><p>Use Coupon</p></li>
+          <li><p>International Travel Documents</p></li>
+        </ul>
+        <!-- end of list4 -->
+
+        <!-- end of footer lists -->
+      </footer>
+    </main>
+    <!-- end of main -->
+    <div class="container-down-banner">
+      <div class="under-footer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_4_1207)">
+            <path
+              d="M8.00016 14.6667C4.32016 14.6667 1.3335 11.68 1.3335 8C1.3335 4.32 4.32016 1.33333 8.00016 1.33333C11.6802 1.33333 14.6668 4.32 14.6668 8C14.6668 11.68 11.6802 14.6667 8.00016 14.6667Z"
+              stroke="#4F4F4F"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M9.92032 10C9.43417 10.4287 8.80851 10.6657 8.16032 10.6667C6.68699 10.6667 5.49365 9.47333 5.49365 8C5.49365 6.52666 6.68699 5.33333 8.16032 5.33333C8.80851 5.33426 9.43417 5.57125 9.92032 5.99999"
+              stroke="#4F4F4F"
+              stroke-width="1.2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_4_1207">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p>my Dream Place 2022</p>
+      </div>
     </div>
-    <!-- end of contact section -->
-    <div class="footer">
-      <p>© 2021 <span>Leon</span> All Right Reserved</p>
-    </div>
 
-    <div class="go-up">up</div>
-
-
-
-    
-    <script src="script.js"></script>
+    <script src="home.js"></script>
   </body>
+  <!-- end of body -->
 </html>
-
